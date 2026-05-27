@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - GraniteOS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+        .card{display:block;background:#fff;border:1px solid #e6e6e6;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease}
+        .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.12)}
+        .card img{width:100%;height:180px;object-fit:cover}
+        .card-body{padding:1.25rem}
+        .card-body h3{margin-bottom:.75rem;color:#222}
+        .card-body p{margin-bottom:.85rem;line-height:1.6;color:#555}
+        .card-body .meta{font-size:.92rem;color:#666}
+        .page-header{margin-bottom:1.5rem}
+        .note{font-size:.95rem;color:#666;max-width:760px}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="GraniteOS_Logo.jpg" alt="GraniteOS Logo">
+                <span>GraniteOS</span>
+            </a>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://gdevelop.io" class="cta-button">GDevelop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-section">
+                <div class="page-header">
+                    <h1>Community Contributions</h1>
+                    <p class="note">Discover OS images and apps submitted by the GraniteOS community. Each card links to a package detail or download so you can preview community builds and get started quickly.</p>
+                </div>
+
+                <div class="card-grid">
+                    <a class="card" href="os/GraniteOS.html">
+                        <img src="https://via.placeholder.com/800x400?text=GraniteOS+Desktop" alt="GraniteOS Desktop screenshot">
+                        <div class="card-body">
+                            <h3>GraniteOS Desktop</h3>
+                            <p>Full-featured desktop build of GraniteOS with GUI optimizations and example apps.</p>
+                            <p class="meta">Developer: Granite Labs • Version: 1.2 • Platform: x86</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://example.com/graniteos-lite.zip" target="_blank">
+                        <img src="https://via.placeholder.com/800x400?text=GraniteOS+Lite" alt="GraniteOS Lite screenshot">
+                        <div class="card-body">
+                            <h3>GraniteOS Lite</h3>
+                            <p>Lightweight, CLI-first build for low-resource devices.</p>
+                            <p class="meta">Developer: Community • Version: 0.9 • Platform: x86</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://example.com/graniteos-arm.img" target="_blank">
+                        <img src="https://via.placeholder.com/800x400?text=GraniteOS+ARM" alt="GraniteOS ARM screenshot">
+                        <div class="card-body">
+                            <h3>GraniteOS ARM Build</h3>
+                            <p>Prebuilt images and instructions for ARM-based devices.</p>
+                            <p class="meta">Developer: ARM Contributors • Version: 1.0 • Platform: ARM</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com">GitHub</a>
+        </div>
+        <p>&copy; 2026 GraniteOS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
