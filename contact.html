@@ -101,6 +101,51 @@
             </div>
 
             <div class="content-section">
+                <h2>OS Submission</h2>
+                <p>Submit your application or package for inclusion or review on GraniteOS.</p>
+
+                <form style="margin-top: 2rem;" name="os-submission" netlify>
+                    <div class="form-group">
+                        <label for="dev-name">Developer Name</label>
+                        <input type="text" id="dev-name" name="developer_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dev-email">Email Address</label>
+                        <input type="email" id="dev-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="app-name">App Name</label>
+                        <input type="text" id="app-name" name="app_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="app-description">App Description</label>
+                        <textarea id="app-description" name="app_description" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="app-link">Link to File</label>
+                        <input type="url" id="app-link" name="app_link" placeholder="https://example.com/your-app.zip" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="platform">Target Platform</label>
+                        <select id="platform" name="platform" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; font-family: inherit;">
+                            <option value="">-- Select platform --</option>
+                            <option value="desktop">Desktop (Windows, Linux, MacOS)</option>
+                            <option value="android">Android</option>
+                            <option value="ios">iOS</option>
+                            <option value="universal">Universal</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit OS</button>
+                </form>
+            </div>
+
+            <div class="content-section">
                 <h2>Frequently Asked Questions</h2>
                 
                 <h3>How long does it take to get a response?</h3>
